@@ -1,73 +1,50 @@
-# 🚀 Processador de Perguntas Matemáticas com IA
+# Tutor Matemático com IA
 
-Este projeto usa a biblioteca **LangChain** para processar perguntas matemáticas enviadas pelo usuário. Ele valida se a pergunta é realmente matemática, corrige possíveis erros de sintaxe e envia para um modelo de IA (**Llama3-8b-8192**) via **Groq API** para obter a resposta.
+Este projeto é um tutor matemático que utiliza **Inteligência Artificial** para responder perguntas matemáticas. Ele valida se a pergunta contém uma expressão matemática e então processa a resposta usando um modelo de IA baseado no **Llama 3**, fornecido pelo serviço **Groq**.
 
----
+## 📌 Tecnologias Utilizadas
 
-## 📌 Funcionalidades
-- **Valida se a entrada é uma expressão matemática**
-- **Corrige a sintaxe** (ex.: adiciona `*` entre números e letras (2x -->2*x))
-- **Encaminha a pergunta para IA** e retorna a resposta formatada em JSON
+- **Python** (linguagem principal)
+- **LangChain** (estruturação do fluxo da IA)
+- **Regex (re)** (validação de expressões matemáticas)
+- **JSON** (estruturação da resposta)
+- **Groq API** (serviço de IA)
 
----
+## 🚀 Como Executar
 
-## 🛠️ Instalação
-1. Clone este repositório:
+1. **Instale as dependências** (se ainda não tiver):
    ```sh
-   git clone https://github.com/VitorGibertoni/Estagio-IA---Mentes-Notaveis.git 
-   cd Estagio-IA---Mentes-Notaveis 
+   pip install langchain langchain-core groq
    ```
-2. Crie um ambiente virtual (opcional, mas recomendado):
+
+2. **Adicione sua API Key do Groq** no código-fonte:
+   ```python
+   os.environ["GROQ_API_KEY"] = "Digite sua API KEY aqui"
+   ```
+
+3. **Execute o programa** no terminal:
    ```sh
-   python -m venv venv
-   source venv/bin/activate  # Linux/macOS
-   venv\Scripts\activate  # Windows
+   python part1_langchain.py
    ```
-3. Instale as dependências:
-   ```sh
-   pip install -r requirements.txt
-   ```
-   *(Crie um arquivo `requirements.txt` se necessário, incluindo: `langchain`, `re`, `os`, `json`)*
+
+4. **Digite sua pergunta matemática** e receba a resposta da IA!
+
+## 🔧 Estrutura do Código
+
+- `validate_question(question: str)`: Valida se a entrada do usuário contém uma equação matemática.
+- `process_ai_question(question: str)`: Envia a pergunta ao modelo de IA e retorna a resposta.
+- `receiver(question: str)`: Pipeline que valida e processa a pergunta, retornando um JSON com a resposta.
+- `run()`: Função principal que solicita a pergunta do usuário e exibe a resposta.
+
+## ⚠️ Aviso
+
+- **Nunca compartilhe sua API Key publicamente!**
+- O modelo só responde perguntas matemáticas.
+- Certifique-se de que sua pergunta contenha números e operadores matemáticos.
+
+## 📄 Licença
+
+Este projeto é livre para uso e modificação. Caso utilize ou modifique, sinta-se à vontade para contribuir!
 
 ---
-
-## 🚀 Como Usar
-Execute o script e insira uma pergunta matemática:
-```sh
-python Parte1_Langchain.py
-```
-Digite algo como:
-```
-Insira a pergunta matematica: quanto é 2+2?
-```
-Saída esperada:
-```json
-{
-    "pergunta": "2+2",
-    "categoria": "matematica",
-    "resposta": "4"
-}
-```
-
----
-
-## ⚙️ Como Funciona
-- **`validar_pergunta(pergunta: str) -> bool`**: Confere se a entrada contém símbolos matemáticos.
-- **`corrigir_sintaxe(pergunta: str) -> str`**: Adiciona operadores ausentes, como `2x` -> `2*x`.
-- **`processar_pergunta_ia(pergunta: str) -> str`**: Formata o prompt e envia para a IA.
-- **`pipeline`**: Estrutura que primeiro valida e depois processa a resposta.
-- **`receptor(pergunta: str)`**: Orquestra tudo e retorna a resposta formatada.
-
----
-
-
-
-## 📝 Notas
-- Certifique-se de substituir a chave da API **Groq**(linha 10) antes de rodar o projeto.
-- A IA responde apenas a perguntas matemáticas, outras entradas gerarão erro.
-- Futuras melhorias podem incluir suporte a perguntas matemáticas mais complexas.
-
----
-
-
 
