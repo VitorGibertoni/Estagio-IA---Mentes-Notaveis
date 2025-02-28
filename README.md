@@ -22,7 +22,9 @@ Cada pasta possui um `README.md` específico que fornece detalhes sobre como cad
 ## Como Rodar
 
 ### Pré-requisitos
-- Ambos os códigos requerem a instalação das bibliotecas necessárias, como `langchain`, `langgraph`, e outras dependências específicas. Consulte os `README.md` nas pastas `Parte1_LangChain/` e `Parte2_LangGraph/` para mais detalhes sobre como configurar cada ambiente.
+- Possuir o Docker instalado na maquina!
+  
+ Consulte os `README.md` nas pastas `Parte1_LangChain/` e `Parte2_LangGraph/` para mais detalhes sobre como configurar cada ambiente.
 
 ### Executando os Códigos
 1. Clone o repositório:
@@ -41,7 +43,3 @@ Cada pasta possui um `README.md` específico que fornece detalhes sobre como cad
      ```
 
 3. Siga as instruções específicas no `README.md` de cada pasta para rodar os códigos.
-
-## Licença
-
-Este projeto está licenciado sob a [Licença MIT](LICENSE), para mais detalhes.
