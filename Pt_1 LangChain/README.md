@@ -12,22 +12,20 @@ Este projeto é um tutor matemático que utiliza **Inteligência Artificial** pa
 
 ## 🚀 Como Executar
 
-1. **Instale as dependências** (se ainda não tiver):
-   ```sh
-   pip install langchain langchain-core groq
-   ```
 
-2. **Adicione sua API Key do Groq** no código-fonte:
+
+1. **Adicione sua API Key do Groq** no código-fonte:
    ```python
    os.environ["GROQ_API_KEY"] = "Digite sua API KEY aqui"
    ```
 
-3. **Execute o programa** no terminal:
+2. **Execute o programa** no terminal:
    ```sh
-   python part1_langchain.py
+   docker build . --tag part1:v1
+   docker run -i part1:v1  
    ```
 
-4. **Digite sua pergunta matemática** e receba a resposta da IA!
+3. **Digite sua pergunta matemática** e receba a resposta da IA!
 
 ## 🔧 Estrutura do Código
 
@@ -47,4 +45,3 @@ Este projeto é um tutor matemático que utiliza **Inteligência Artificial** pa
 Este projeto é livre para uso e modificação. Caso utilize ou modifique, sinta-se à vontade para contribuir!
 
 ---
-

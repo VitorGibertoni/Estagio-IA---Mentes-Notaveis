@@ -11,28 +11,17 @@ Este projeto utiliza um modelo de Inteligência Artificial (IA) para processar e
 
 ## 📂 Estrutura do Código
 - **Validação da Pergunta**: Verifica se a entrada contém uma equação matemática válida.
+- **Correção de Sintaxe**: Ajusta a formatação da equação (ex: adiciona `*` entre números e variáveis quando necessário).
 - **Processamento com IA**: Envia a equação ao modelo de IA e recebe a resposta.
 - **Grafo de Estados**: Controla o fluxo de entrada e saída usando os agentes "Receptor" e "Professor Virtual".
 
-## 🚀 Como Executar
-### 1️⃣ Pré-requisitos
-Antes de rodar o código, certifique-se de ter:
-- Python 3 instalado
-- As bibliotecas necessárias instaladas. Para isso, execute:
-  ```sh
-  pip install langchain langgraph
-  ```
+## 🚀 Como Executar 
 
-### 2️⃣ Rodando o Código
 Execute o script diretamente no terminal ou em um ambiente Python:
 ```sh
-python parte2_langgraph.py
+docker build . --tag part2:v1
+docker run -i part2:v1
 ```
-Digite uma equação matemática quando solicitado, como:
-```
-Digite uma equação para resolver:
-```
-A resposta será processada e exibida na tela.
 
 ## 🛠️ Personalização
 Se desejar alterar o modelo de IA, basta modificar esta linha do código:

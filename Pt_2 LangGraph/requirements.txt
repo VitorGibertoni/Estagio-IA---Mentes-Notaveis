@@ -1,0 +1,5 @@
+groq==0.18.0
+langchain==0.3.19
+langchain-core==0.3.40
+langchain-groq==0.2.4
+langgraph==0.3.1
