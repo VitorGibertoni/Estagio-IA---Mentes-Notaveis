@@ -11,11 +11,12 @@ Este projeto utiliza um modelo de Inteligência Artificial (IA) para processar e
 
 ## 📂 Estrutura do Código
 - **Validação da Pergunta**: Verifica se a entrada contém uma equação matemática válida.
-- **Correção de Sintaxe**: Ajusta a formatação da equação (ex: adiciona `*` entre números e variáveis quando necessário).
 - **Processamento com IA**: Envia a equação ao modelo de IA e recebe a resposta.
 - **Grafo de Estados**: Controla o fluxo de entrada e saída usando os agentes "Receptor" e "Professor Virtual".
 
 ## 🚀 Como Executar 
+**Instale o Docker na sua maquina**
+
  **Adicione sua API Key do Groq** no código-fonte:
    ```python
    os.environ["GROQ_API_KEY"] = "Digite sua API KEY aqui"
