@@ -11,7 +11,6 @@ Este projeto utiliza um modelo de Inteligência Artificial (IA) para processar e
 
 ## 📂 Estrutura do Código
 - **Validação da Pergunta**: Verifica se a entrada contém uma equação matemática válida.
-- **Correção de Sintaxe**: Ajusta a formatação da equação (ex: adiciona `*` entre números e variáveis quando necessário).
 - **Processamento com IA**: Envia a equação ao modelo de IA e recebe a resposta.
 - **Grafo de Estados**: Controla o fluxo de entrada e saída usando os agentes "Receptor" e "Professor Virtual".
 
@@ -27,7 +26,7 @@ Antes de rodar o código, certifique-se de ter:
 ### 2️⃣ Rodando o Código
 Execute o script diretamente no terminal ou em um ambiente Python:
 ```sh
-python Parte2_LangGraph.py
+python parte2_langgraph.py
 ```
 Digite uma equação matemática quando solicitado, como:
 ```
