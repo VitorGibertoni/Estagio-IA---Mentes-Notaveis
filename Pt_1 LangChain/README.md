@@ -12,7 +12,7 @@ Este projeto é um tutor matemático que utiliza **Inteligência Artificial** pa
 
 ## 🚀 Como Executar
 
-
+**✅Instale o Docker em sua Maquina**
 
 1. **Adicione sua API Key do Groq** no código-fonte:
    ```python
