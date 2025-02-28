@@ -16,6 +16,11 @@ Este projeto utiliza um modelo de Inteligência Artificial (IA) para processar e
 - **Grafo de Estados**: Controla o fluxo de entrada e saída usando os agentes "Receptor" e "Professor Virtual".
 
 ## 🚀 Como Executar 
+ **Adicione sua API Key do Groq** no código-fonte:
+   ```python
+   os.environ["GROQ_API_KEY"] = "Digite sua API KEY aqui"
+   ```
+
 
 Execute o script diretamente no terminal ou em um ambiente Python:
 ```sh
