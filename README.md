@@ -10,10 +10,10 @@ Cada pasta possui um `README.md` específico que fornece detalhes sobre como cad
 ## Estrutura do Repositório
 
 ```
-├── Parte1_LangChain/
+├── Pt_1 LangChain/
 │   ├── README.md   # Detalhes sobre o código usando LangChain
 │   └── ...         # Outros arquivos relacionados ao código1
-├── Parte2_LangGraph/
+├── Pt_2 LangGraph/
 │   ├── README.md   # Detalhes sobre o código usando LangGraph
 │   └── ...         # Outros arquivos relacionados ao código2
 └── README.md       # Este arquivo
@@ -27,17 +27,17 @@ Cada pasta possui um `README.md` específico que fornece detalhes sobre como cad
 ### Executando os Códigos
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/VitorGibertoni/Estagio-IA-Mentes-Notaveis
+   git clone https://github.com/VitorGibertoni/Estagio-IA---Mentes-Notaveis
    ```
 
 2. Acesse a pasta de cada código:
    - Para o código 1:
      ```bash
-     cd parte1_langchain
+     cd "Pt_1 LangChain"
      ```
    - Para o código 2:
      ```bash
-     cd parte2_langgraph
+     cd "Pt_2 LangGraph"
      ```
 
 3. Siga as instruções específicas no `README.md` de cada pasta para rodar os códigos.
