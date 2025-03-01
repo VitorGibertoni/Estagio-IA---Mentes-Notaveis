@@ -23,6 +23,7 @@ Cada pasta possui um `README.md` específico que fornece detalhes sobre como cad
 
 ### Pré-requisitos
 - Possuir o Docker instalado na maquina!
+- Possuir o GIT
   
  Consulte os `README.md` nas pastas `Parte1_LangChain/` e `Parte2_LangGraph/` para mais detalhes sobre como configurar cada ambiente.
 
