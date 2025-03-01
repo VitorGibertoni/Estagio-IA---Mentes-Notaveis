@@ -29,13 +29,8 @@ git clone https://github.com/VitorGibertoni/Estagio-IA---Mentes-Notaveis
    os.environ["GROQ_API_KEY"] = "Digite sua API KEY aqui"
    ```
 
- **Adicione sua API Key do Groq** no código-fonte:
-   ```python
-   os.environ["GROQ_API_KEY"] = "Digite sua API KEY aqui"
-   ```
 
-
-Execute o script diretamente no terminal ou em um ambiente Python:
+2. **Execute o script diretamente no terminal ou em um ambiente Python**:
 ```sh
 docker build . --tag part2:v1
 docker run -i part2:v1
