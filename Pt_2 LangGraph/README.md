@@ -15,7 +15,19 @@ Este projeto utiliza um modelo de Inteligência Artificial (IA) para processar e
 - **Grafo de Estados**: Controla o fluxo de entrada e saída usando os agentes "Receptor" e "Professor Virtual".
 
 ## 🚀 Como Executar 
-**Instale o Docker na sua maquina**
+
+**✅Instale o Docker em sua Maquina** |
+**✅Instale o GIT em sua Maquina**
+
+**Clone o Repositorio** pelo Terminal: 
+```sh
+git clone https://github.com/VitorGibertoni/Estagio-IA---Mentes-Notaveis
+ ```
+
+1. **Adicione sua API Key do Groq** no código-fonte (main.py):
+   ```python
+   os.environ["GROQ_API_KEY"] = "Digite sua API KEY aqui"
+   ```
 
  **Adicione sua API Key do Groq** no código-fonte:
    ```python
