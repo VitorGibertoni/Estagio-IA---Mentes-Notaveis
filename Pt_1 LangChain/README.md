@@ -13,8 +13,12 @@ Este projeto é um tutor matemático que utiliza **Inteligência Artificial** pa
 ## 🚀 Como Executar
 
 **✅Instale o Docker em sua Maquina**
+**✅Instale o GIT em sua Maquina**
 
-1. **Adicione sua API Key do Groq** no código-fonte:
+Clone o Repositorio 
+**git clone https://github.com/VitorGibertoni/Estagio-IA---Mentes-Notaveis**
+
+1. **Adicione sua API Key do Groq** no código-fonte (main.py):
    ```python
    os.environ["GROQ_API_KEY"] = "Digite sua API KEY aqui"
    ```
